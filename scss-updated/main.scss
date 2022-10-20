@@ -1,0 +1,102 @@
+@import "./variable";
+@import "./mixins";
+
+* {
+   @include reset;
+}
+
+.container
+{
+   @include static;
+}
+.bgcontainer{
+   @extend .container;
+   background-color: $bg-color;
+   padding:15px;
+    
+}
+
+.header {
+    padding: 0px 40px 10px 40px;
+
+         &-nav-keys
+            {
+               @include nav-bars;
+            }
+               &-buttons
+                 {
+                 margin:7px;
+                 color:$color;
+                 text-decoration:none;
+               }
+    
+}
+
+
+.text-content {
+            @include text-content;
+   
+    &-para{
+           font-size:$font-small;
+          }
+}
+
+.cycle-image 
+{
+           width:100%;
+           height:40 auto;
+}
+
+.chr-glb-container {
+
+          @include flex-center;
+                   &-marginn
+                   {
+                   margin:35px;
+                    }
+                  &-bg
+                  {
+                    background-color:$pic-bg-color;
+                  }
+    }
+
+.last-container
+ {
+    @include footer-border;
+
+        &-image
+         {
+        padding: auto;
+        display: flex;
+        background-color:$bg-color;
+        padding-left:7rem;
+        }
+
+        &-ul 
+        {
+        width: 850px;
+        list-style: none;
+        display: flex;
+        width: 100px;    
+        padding: 1rem 2rem;
+        float: left;
+        }
+
+        &-li 
+        {
+         @include li-order;
+        }
+}
+
+
+.footer 
+    {
+     height: 30px;
+     background-color:$bg-color-2;
+     padding:1rem 0;
+
+        &-copyryt
+         {
+          @include footer;
+         }
+}         

@@ -1,0 +1,45 @@
+@mixin reset{
+    margin:0;
+    padding:0;
+    border:0;
+}
+@mixin static{
+    width:1200px;
+}
+@mixin nav-bars
+{
+    float:right;
+    padding-top:20px;
+}
+@mixin flex-center{
+    display: flex;
+    background-color:$bg-color;
+    align-content: center;
+    justify-content: center;
+}
+@mixin footer {
+    color:$color-2; 
+    font-size: 9px; 
+    text-align: center;
+    font-weight: bold;
+    
+}
+@mixin li-order {
+        width: 100px;    
+        padding: 1rem 2rem;
+        float:center;
+    
+}
+@mixin text-content {
+    text-align:center; 
+    padding:3px 5px 10px 4px; 
+    margin:10px;
+    
+}
+@mixin  footer-border {
+    border-top: 1px solid $color;
+    border-bottom: 1px solid $color;
+    margin-bottom: 60px;
+   
+    
+}
