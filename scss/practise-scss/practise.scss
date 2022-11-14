@@ -1,0 +1,51 @@
+//variables
+@import './variables';
+//mixins
+@import "./mixins";
+
+
+.bg-container{
+    background-color:$bg-color-2;
+    
+}
+.container
+{
+          background-color:$bg-color;
+          font-family:$font; 
+          border-radius:20px;
+          padding:15px;
+          margin:15px;
+          
+          &-h{
+              color:$color-2;
+              @include bold-center;
+              
+          }
+         &-p {
+             color:$color;
+             font-weight:bold;
+             text-align:center
+
+          }
+
+}
+.body-container{
+              text-align:center;
+
+                 &-h{
+                     @extend .body-container;
+                 }
+
+               &-image{
+                      @extend .body-container;
+                    border-radius:20px;  
+                   
+                    }
+                }
+
+.button{
+  @include btn;
+ }
+ .btn-container{
+  text-align: center;
+    }

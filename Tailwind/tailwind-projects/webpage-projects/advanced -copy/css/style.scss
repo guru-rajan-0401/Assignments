@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+$color2:#0d0d0e93;
+$color1:#E82E31;
+
+
+.bg-header-image{
+    background-image: url("../Assets/homepage-08.png");
+    background-size:cover;
+    height:100vh;
+    padding-bottom:50px;
+
+}
+.bg-testimonial{
+    background-image: url("../Assets/Group\ 338.png");
+    background-size:cover;
+    width:100vw;
+}
+.nav-bar{
+    color:$color2; 
+}
+.nav-keys{
+    margin-right:40px;
+    font-weight:600;
+}
+.percentage-container{
+    border-radius:100%;
+    border-width:2px;
+    border-right:18px;
+    text-align:center;
+    border-top-width:18px;
+    border-bottom-width:18px;
+    border-style: solid;
+    padding: 6rem;
+    width: 0.5rem;
+  
+}
+.card-container-1{
+
+    height: 436px;
+    padding: 3rem;
+    width: 400px;
+    border-width: 2px;
+    border-style: solid;
+    border-width: 1px
+}
+.card-landscape{
+    padding: 3.5rem;
+    border-width: 2px;
+    height: 192px;
+    height: 192px;
+}
+.card-1-h{
+    font-weight: 700;
+    color:black;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+.para{
+    font-size: 0.75rem;
+    line-height:1rem;
+    color:$color2;
+}
+.blog-container{
+    background-image:url("../Assets/Mask\ Group\ 1.png");
+    padding-top: 100px;
+    background-size: cover;
+    padding-bottom:40px;
+}
+.blog-card{
+    border-width:0px;
+    border-style: solid;
+    height:420px;
+    width:290px;
+    background-color: white;
+    
+}
+.copyrights{
+    text-align: center;
+    color:black;
+    background-color: white;
+    padding:22px;
+    border-top:2;
+    border-top-color: #E82E31;
+}
+.red-bg-image{
+    background-image: url("../Assets/Rectangle\ 139.png");
+}
+.bg-length{
+background-image: url("../Assets/Rectangle\ 174.png");
+background-repeat: no-repeat;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+}

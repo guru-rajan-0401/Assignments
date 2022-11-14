@@ -1,0 +1,14 @@
+$bg-color:rgb(178, 178, 214);
+$font:Georgia, 'Times New Roman', Times, serif;
+$color:grey;
+$bg-color-2:aliceblue;
+$color-2:black;
+
+
+.contain{
+    background-color:$bg-color;
+    font-family:$font; 
+    border-radius:20px;
+    padding:15px;
+    margin:15px;
+}

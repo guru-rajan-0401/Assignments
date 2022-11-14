@@ -1,0 +1,57 @@
+.contain {
+  background-color: #b2b2d6;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border-radius: 20px;
+  padding: 15px;
+  margin: 15px;
+}
+
+@forward './variables';
+.bg-container {
+  background-color: aliceblue;
+}
+
+.container {
+  background-color: #b2b2d6;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border-radius: 20px;
+  padding: 15px;
+  margin: 15px;
+}
+
+.container-h {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+.container-p {
+  color: grey;
+  font-weight: bold;
+  text-align: center;
+}
+
+.body-container, .body-container-h, .body-container-image {
+  text-align: center;
+}
+
+.body-container-image {
+  border-radius: 20px;
+}
+
+.button {
+  padding: 10px;
+  margin: 10px;
+  width: 100px;
+  height: 50px;
+  color: white;
+  background-color: #afafec;
+  text-align: center;
+  border-radius: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.btn-container {
+  text-align: center;
+}
+/*# sourceMappingURL=practise.css.map */
