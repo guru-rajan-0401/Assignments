@@ -51,39 +51,41 @@
         var x, y, z; x = 10; y = 10; z = x + y;
         document.getElementById("statement").innerHTML = "the value of z is " + z;
     </script>
-    <p id="expression"></p>
-    <p id="adder"></p>
-    <p id="constant"></p>
+    <p id="multiply"></p>
+    <p id="add"></p>
+    <p id="result"></p>
     <script>
         var x;
         x = 10;
-        document.getElementById("expression").innerHTML = x * 10;
-        document.getElementById("adder").innerHTML = x / 5
+        document.getElementById("multiply").innerHTML = x * 10;
+        document.getElementById("add").innerHTML = x / 5
         value1 = 100;
         value2 = 133;
         value3 = 111;
         var total = value1 + value2 + value3;
-        document.getElementById("constant").innerHTML = "the total value o the pricess is" + " " + total;
+        document.getElementById("result").innerHTML = "value" + " " + total;
     </script>
-    <!-- var-let_variables -->
+    <!-- var-let_variable difference -->
     <div>
-        <p id="let-variable"></p>
-        <button onclick=" let_variable()"> values </button>
-        <p id="var-variable"></p>
-        <button onclick="var_variable ()"> values </button>
+        <p id="let-v"></p>
+        <button onclick=" let_v()"> let value </button>
+        <p id="var-v"></p>
+        <button onclick="var_v ()"> var value </button>
     </div>
     <!-- const_variable and array ,object -->
     <div>
-        <p id="const"></p>
+        <p id="const_variable"></p>
         <p id="const_object"></p>
         <script>
             const cars = ["rr", "bmw", "audi", "benz"]
-            cars[0] = "toyato";
-            cars.push("mg");
-            document.getElementById("const").innerHTML = cars;
+            cars[0] = "rolls r";
+            cars.push("royce");
+            document.getElementById("const_variable").innerHTML = cars;
             / const-object /
-            const car = { name: "BMW", model: "2022", rating: "10" };
-            document.getElementById("const_object").innerHTML = "the car name is" + " " + car.name + " " + "and model of car" + " " + car.model;
+            const bike = { name: "duke",
+             model: "250",
+              mileage: "30" };
+            document.getElementById("const_object").innerHTML = " name" + " " + bike.name + " " + "model" + " " + bike.model +" " +"mileage" + bike.mileage;
         </script>
     </div>
     <!-- operaters -->
@@ -152,10 +154,10 @@
         <p id="object"></p>
         <script>
             const person = {
-                firstName: "gnana",
-                lastName: "moorthy",
+                firstName: "guru",
+                lastName: "rajan",
                 age: "22",
-                eyeColor: "blue",
+                eyeColor: "brown",
                 fullname: function () {
                     return this.firstName + this.lastName;
                 }
@@ -235,15 +237,15 @@
     </div>
     <!-- for- each-loop -->
     <div>
-    <p id="eachloop1"></p>
-    <p id="eachloop2"></p>
+    <p id="loop1"></p>
+    <p id="loop2"></p>
      <script>
     const mark =[40,50,60,70,100];
 
     let txt="";
     mark.forEach(myFunction1,myFunction2 );
-    document.getElementById("eachloop1").innerHTML=txt;
-    document.getElementById("eachloop2").innerHTML=txt;
+    document.getElementById("loop1").innerHTML=txt;
+    document.getElementById("loop2").innerHTML=txt;
   
     function myFunction1 (value) {
         txt += value + "<br>";
@@ -255,9 +257,9 @@
     <!-- for_of_loop -->
     <p id="of_loop"></p>
     <script>
-        const cars_info=["tata-nissa","2022","17laksh"];
+        const bikes_info=["pulsar","2022","1.5laksh"];
         texts="";
-        for (let x of cars_info){
+        for (let x of bikes_info){
             texts +=x+" ";
         }
         document.getElementById("of_loop").innerHTML=texts;
@@ -369,10 +371,10 @@
         </script>
     </div>
     <div>
-        <p id="modu"></p>
+        <p id="mod"></p>
         <script type="module">
             import message from "./message.js";
-            document.getElementById("modu").innerHTML = message();
+            document.getElementById("mod").innerHTML = message();
             </script>
     </div>
 </body>

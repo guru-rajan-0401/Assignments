@@ -43,23 +43,22 @@ function myFunction(a, b) {
     let month = date.getMonth() + 1;
     let year = date.getFullYear();
     document.getElementById("date").innerHTML = date+day+month+year;
-    document.getElementById("date").style.color="red";
-    document.getElementById("date").style.fontWeight="bold";
+    document.getElementById("date").style.color="green";
     document.getElementById("date").style.textAlign="center";
   }
-  function let_variable () {
+  function let_v() {
     let z = 11;
     {
       let z=10
     }
-    document.getElementById("let-variable").innerHTML = z;
+    document.getElementById("let-v").innerHTML = z;
   }
-  function var_variable () {
+  function var_v () {
     var z = 11;
     {
       var z=10;
     }
-    document.getElementById("var-variable").innerHTML = z;
+    document.getElementById("var-v").innerHTML = z;
   }
   / loop /
 function loop() {
@@ -85,32 +84,32 @@ function Do_while () {
   let txt="";
   let i=0;
   do{
-    txt += "<br>The numbers are"+" " + i;
+    txt += "<br>values"+" " + i;
     i++;
   }
-  while(i < 5);
+  while(i < 9);
   document.getElementById("do_while").innerHTML=txt;
 }
 
 function maping() {
-  let fruits =new Map([
-    ["apple",210],
-    ["orange",90],
-    ["bannana",10],
-    ["graps",100],
+  let veg =new Map([
+    ["brinjal",10],
+    ["potato",35],
+    ["tomato",100],
+    ["spinach",30],
   ]);
-  fruits.set("lemon",5);
-  fruits.delete("bannana");
+  veg.set("lemon",5);
+  veg.delete("tomato");
   text="<ul>"
-  fruits.forEach(function(value,key){
+  veg.forEach(function(value,key){
     text +="<li>"+ key +"="+ value+"</li>"  
   })
   text +="</ul>";
   let txt="";
-  for(let x of fruits.entries()){
+  for(let x of veg.entries()){
     txt +=x + "<br>";
   }
-  document.getElementById("maps").innerHTML=fruits.get("apple") +"<br>"+ fruits.get("lemon")+"<br>"+ fruits.size+"<br>"+fruits.has("bannana")+"<br>"+fruits.has("lemon")+"<br>"+text+"<br>"+txt;
+  document.getElementById("maps").innerHTML=veg.get("brinjal") +"<br>"+ veg.get("lemon")+"<br>"+ veg.size+"<br>"+veg.has("tomato")+"<br>"+veg.has("lemon")+"<br>"+text+"<br>"+txt;
 }
 
 function sets() {
@@ -123,7 +122,7 @@ function sets() {
  letters.forEach(function (values){
   txt += values+" <br>";
  })
- / values /
+ // values /
  text1="";
  for (const x of letters.values()){
   text1 += x +"<br>";
