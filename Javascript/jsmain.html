@@ -213,16 +213,16 @@
             }
             / else_if /
             let month= new Date().getMonth();
-            let greeating;
+            let greeting;
             if (month>10) {
-               greeating="hello" 
+               greeting="hello" 
             }  else if(month>9){
-                greeating="welcome"
+                greeting="welcome"
             }
             else{
-                greeating="finished"
+                greeting="finished"
             }
-            document.getElementById("else_if").innerHTML=greeating;
+            document.getElementById("else_if").innerHTML=greeting;
         </script>
     </div>
     <!-- for_loop -->
@@ -302,7 +302,7 @@
     document.getElementById("ternary").innerHTML="welcome";
   }
   function twitter() {
-    document.getElementById("ternary").innerHTML="Login to social media"
+    document.getElementById("ternary").innerHTML="Login "
   }
   let authenticate=true;
   authenticate ? facebook(): twitter();
